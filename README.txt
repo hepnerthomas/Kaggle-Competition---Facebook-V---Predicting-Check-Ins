@@ -1,8 +1,6 @@
 Thomas Hepner, July 2016: 
 
-Project code for the Facebook V - Predicting Check Ins
-Kaggle competition that I used to place 87th out of 1212
-competitors. 
+Project code for the Facebook V - Predicting Check Ins Kaggle competition that I used to place 87th out of 1212 competitors. 
 
 The code is broken up into the following files/functions: 
 
