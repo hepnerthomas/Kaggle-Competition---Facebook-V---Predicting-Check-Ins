@@ -1,0 +1,33 @@
+For CV on test data set!!!
+
+1. XGBOOST: 
+	- 100x200, n_est = 50, learning_rate = 0.25, thresh = 10: 0.636, 4 hours
+	- 75x150, n_est = 50, learning_rate = 0.25, thresh = 10: 0.638, 4 hours
+	- 50x100, n_est = 50, learning_rate = 0.25, thresh = 10: 0.633, 3.8 hours
+	- 100x100, n_est = 50, learning_rate = 0.25, thresd = 10: 0.65, 4 hours (LB: 0.57004)
+	- 50x50, n_est = 50, learning_rate = 0.25, thresh = 10: 0.646, 4.5 hours
+	- 20x40, n_est = 50, learning_rate = 0.15, thresh = 10: 0.643, 9 hours
+2. RF: 
+	- 100x200
+	- 75x150, n_est = 100, thresh = 10: 0.618 (~1 hour)
+	- 50x100, n_est = 100, thresh = 10: 0.615
+	- 100x100, n_est = 50, thresh = 10: 0.63, 1 hours
+	- 50x50, n_est = 100, thresh = 10: 0.634, 39 minutes
+	- 20x40, n_est = 100, thresh = 10: 0.642, 1.2 hours *** (LB: 0.56148)
+
+3. NN:
+	- 75x150:
+	- 50x100:
+	- 100x100, k = 25, Ravi's weights optimized, threshold = 5: 0.632 , 35 minutes 
+	- 50x50: 
+	- 20x40, k = 25, Ravi's weights optimized, threshold = 5: 0.647 , 35 minutes (LB:
+
+Top LB Models: 
+- XGB (100, 100) + XGB(50,50) + XGB(100,100) + RF(20,40) + NN(20,40): 0.58996
+- XGB(100,100) + RF(20,40) + NN(20,40): 0.58425
+- XGB (100,100) + RF(20,40) + NN(20,40): 0.57925
+- XGB (100,100) + RF(20,40): 0.57382 
+- XGB (100,100): 0.57004
+- XGB (100, 100) + RF (100,100): 0.56889
+- XGB (50,50) + RF (20x40): 0.56487
+- RF (20x40): 0.56148
